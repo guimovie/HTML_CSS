@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente ou  diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <!--Para fazer isso tem que colocar a <img> dentro do <picture> e colocar o source:media:type em cima do <img>, e tem que seguir a ordem do menor tamanho pro maior, se não, não vai funcionar-->
+        <h1>Reproduzindo Áudio</h1>
+        <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+        <audio src="midia/ruff-money.mp3" controls ></audio>
+        <p>Ou pode fazer assim também</p>
+        <audio preload="metadata" controls> <!--Dentro do preload tem o auto (carrega todo o arquivo assim q abre o site, ficando mais pesado), metadata (abre parcialmente junto com o site) e none (só abre depois que clica no player). Além disso, tem o autoplay, controls e loop para colocar dentro do áudio-->
+            <source src="midia/time.mp3" type="audio/mpeg">
+            <source src="midia/time.ogg" type="audio/ogg">
+            <p>infelizmente seu navegador não consegue reproduzir esse áudio. <a href="midia/time.mp3">Clique aqui</a> Para baixar o arquivo MP3.</p>
+        </audio><!--Caso não abra o arquivo, ele vai abrir o proximo. quanto mais tipos de arquivos você colocar no site, mais  compatibilidade ele vai ter com os navegadores. existe o MP3, OGG e WAV-->
+</body>
+</html>

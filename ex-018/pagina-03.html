@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 03</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hover:hover {
+            background-color: rgb(0, 136, 136);
+            color: white;
+        }
+        
+        .active:active {
+            background-color: rgb(0, 136, 136);
+            color: white;
+        }
+        
+        .disabled:disabled {
+            opacity: 1;    
+        }
+        
+        button {
+            display: list-item;            
+            margin: auto;
+        }
+        
+        .empty:empty {
+            background-color: aqua;    
+        }
+        
+        .fot p:first-of-type {
+            color: rgb(3, 158, 158); 
+            font-weight: bold;   
+            text-decoration: underline;
+        }
+        
+        .lot p:last-of-type {
+            color: rgb(3, 158, 158);
+            font-weight: bold;   
+            text-decoration: underline;
+        }
+
+        .imputFocus:focus {
+            background-color: aqua;
+        }
+
+        .not:not(.new) {
+            background-color: aqua;
+        }
+
+        .checkbox:checked {
+            width: 2em;
+            height: 2em;
+        }
+        
+        .checkboxAfter {
+            display: list-item;            
+            margin: auto;
+            width: 1.5em;
+            height: 1.5em;
+        }    
+
+        .checkboxAfter::after {
+            color: red;
+            content: "Inativo";
+            left: 30px;
+            position: relative;
+        }
+        
+        .checkboxAfter:checked::after {
+            color: green;
+            content: "Ativo";
+            left: 30px;
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="all">
+        <h1>Pseudo-classes</h1>
+            <h2>1 - Hover</h2>
+                <button class="hover">Botão</button>
+
+        <hr>
+        
+        <h2>2 - Active</h2>
+            <button class="active">Botão</button>
+
+        <hr>
+
+        <h2>3 - Disabled</h2>
+            <button class="disabled" disabled>Botão</button>
+
+        <hr>
+
+        <h2>4 - Empty</h2>
+            <button class="empty">Botão</button>
+            <button class="empty"></button>
+            <button class="empty">Botão</button>
+            
+            <hr>
+            
+        <h2>5 - First of Type</h2>
+        <div class="fot">
+            <p>Parágrafo 1</p>
+            <p>Parágrafo 2</p>
+            <p>Parágrafo 3</p>
+        </div>   
+        
+        <hr>
+        
+        <h2>6 - Last of Type</h2>
+        <div class="lot">
+            <p>Parágrafo 1</p>
+            <p>Parágrafo 2</p>
+            <p>Parágrafo 3</p>
+        </div>   
+        
+        <hr>
+        
+        <h2>7 - Focus</h2>
+            <input type="text" class="imputFocus">
+        
+        <hr>
+        
+        <h2>8 - Not</h2>
+            <button class="not">Botão</button>
+            <button class="not new">Botão</button>
+            <button class="not">Botão</button>
+
+        <hr>
+
+        <h2>9 - Checked</h2>
+            <input type="checkbox" class="checkbox">
+            <input type="checkbox" class="checkbox">
+            <input type="checkbox" class="checkbox">
+        
+        <hr>
+
+        <h2>9 - Checked + after</h2>
+            <input type="checkbox" class="checkboxAfter">
+            <input type="checkbox" class="checkboxAfter">
+            <input type="checkbox" class="checkboxAfter">
+        
+        <hr>
+
+        <div class="all">
+            <a href="pagina-02.html" rel="prev"><img src="imagens/arrow_back_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="prev"></a>
+            <a href="pagina-04.html" target="_self" rel="next"><img src="imagens/arrow_forward_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="next"></a>
+        </div>
+    </main>
+</body>
+</html>

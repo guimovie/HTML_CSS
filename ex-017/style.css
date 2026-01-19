@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+/*
+    em HTML é id    = em CSS é #
+    em HTML é class = em CSS é .
+    mudar um elemento específico       = id
+    mudar varios elementos semelhantes = class
+    é possivel usar id e class no mesmo elemento
+*/
+
+body {
+    background-image: linear-gradient(to right, rgb(241, 139, 241), rgb(155, 79, 155));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(26, 0, 26);
+}
+
+#principal {
+    background-color: rgb(88, 0, 88);
+    color: white;
+    font-size: 2.1em;
+    text-align: center;
+    border-radius: 0.5em;
+}
+
+h2 {
+    background-color: rgb(124, 60, 124);
+    width: 10em;
+    border-radius: 0.2em;
+    color: rgb(117, 32, 117);
+    text-align: center;
+    
+}
+
+.basico {
+    background-color: rgb(124, 60, 124);
+    color: rgb(218, 138, 218);    
+}
+
+.intermediario {
+    background-color: rgb(97, 46, 97);
+    color: rgb(233, 108, 233);
+}
+
+.avancado {
+    background-color: rgb(65, 32, 65);
+    color: rgb(209, 25, 209);
+}
+
+p {
+    text-align: justify;
+}

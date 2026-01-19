@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+
+</head>
+<body>
+    <h1>Trabalhando com links</h1>
+    <h2>Usando links externos</h2>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a>.</p> <p>Você também pode acessar meu <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo">canal gratuito no youtube</a>.</p>
+    <!--O target="_blank" serve para quando quiser que abra o link em uma janela em branco, e o rel="external" serve para indicar que é um link externo e que não faz parte do seu site. É recomendado que se abra o link em uma nova guia quando esse link não faz parte do seu site, por exemplo: o  youtube não é seu, então abre em outra página. caso contrário, abra o link na mesma guia do seu site-->
+    <h2>Usando links internos</h2>
+    <p>Esta é a primeira página do meu site, Se quiser, pode acessar também a minha <a href="pag002.html" rel="next">segunda página</a>.</p>
+    <!--O rel="next" indica para o google que o link leva para a próxima página, estabelecendo que essa que você está é a primeira das duas-->
+    <h2>Link para download</h2>
+    <ul>
+        <li><a href="livros/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em pdf</a></li>
+        <li><a href="livros/meulivro.zip" download="meulivro.zip" type="application/zip">Livro compactado em ZIP</a></li> 
+    </ul>
+    <p>Para saber o que colocar no type, dependendo do arquivo que você quer colocar para download, acesse o site <code><a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">iana media types</a></code></p> 
+</body>
+</html>

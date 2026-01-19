@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente.</h1>
+    <p>Este vídeo está hospedado no meu proprio servidor.</p>
+    <video width="560" preload="metadata" poster="imagem/bike.jpeg" controls loop >
+        <source src="midia/video.mp4" type="video/mp4">
+        <source src="midia/Videos.mp4" type="video/mp4">
+        <source src="midia/Videos.webm" type="video/webm">
+        <p>Infelimente o seu navegador não é  compativel com reprodução de video.</p>
+    </video>
+    <h1>Inserindo vídeos do Youtube.</h1>
+    <p>Mais recomendado, pois não consome os dados do seu site, tornado o site mais leve</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/96up38uaAwk?si=dAut3kN7XjloQmuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h1>Inserindo vídeos  do Vimeo.</h1>
+    <p>Mais personalizavel como o video vai  aparecer no site, com um pouco mais qualidade e mais recomendado para quem quer colocar videos privados para assinantes do site, pois se fizer isso no youtube, é possivel que seu conteúdo seja pirateado.</p>
+    <iframe src="https://player.vimeo.com/video/5737848?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="448" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="skate"></iframe>
+    
+</body>
+</html>

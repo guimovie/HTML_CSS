@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 04</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        p {
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 1em;
+        }
+
+        .firstLine::first-line {
+            background-color: aqua;
+        }
+
+        .firstLetter::first-letter {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 3em;
+        }
+
+        .selection::selection {
+            background-color: aqua;
+        }
+
+        .marker {
+            text-align: left;
+        }
+
+        ul.marker li::marker {
+            color: rgb(255, 0, 0);    
+            content: "Ω";
+            font-size: 1.5em;
+        }
+
+        .placeholder::placeholder {
+            text-align: center;
+            font-weight: bold;
+            color: rgb(1, 90, 90);
+        }
+
+        .before, .after {
+            text-align: center;
+            height: 0.03em;
+        }
+
+        .before::before {
+            content: "☠";
+            right: 10px;
+            position: relative;
+        }
+        
+        .after::after {
+            content: "☠";
+            left: 10px;
+            position: relative;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main class="all">
+        <h1>Pseudo-Elementos</h1>
+        <h2>1 - First line</h2>
+            <p class="firstLine">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, eligendi soluta ab explicabo in libero modi accusantium voluptatibus odio asperiores ullam itaque maxime debitis fugit eos maiores deleniti, ducimus sunt?</p>
+        <hr>
+        
+        <h2>2 - First letter</h2>
+            <p class="firstLetter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, eligendi soluta ab explicabo in libero modi accusantium voluptatibus odio asperiores ullam itaque maxime debitis fugit eos maiores deleniti, ducimus sunt?</p>
+        <hr>
+        
+        <h2>3 - Selection</h2>
+            <p class="selection">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, eligendi soluta ab explicabo in libero modi accusantium voluptatibus odio asperiores ullam itaque maxime debitis fugit eos maiores deleniti, ducimus sunt?</p>
+        <hr>
+
+        <h2>4 - Marker</h2>
+        <ul class="marker">
+           <li>Item 1</li> 
+           <li>Item 2</li> 
+           <li>Item 3</li> 
+        </ul>
+        <hr>
+         
+        <h2>5 - Placeholder</h2>
+        <input type="text" placeholder="Digite seu e-mail" class="placeholder">
+        <hr>
+
+        <h2>6 - Before</h2>
+            <div>
+                <p class="before">Exemplo</p>
+                <p class="before">Exemplo</p>
+                <p class="before">Exemplo</p>
+            </div>
+        <hr>
+
+        <h2>7 - After</h2>
+            <div>
+                <p class="after">Exemplo</p>
+                <p class="after">Exemplo</p>
+                <p class="after">Exemplo</p>
+            </div>
+        <hr>
+        
+        <div class="all">
+            <a href="pagina-03.html" rel="prev"><img src="imagens/arrow_back_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt="prev"></a>
+        </div>
+    </main>
+</body>
+</html>
