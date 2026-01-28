@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Interação com Dois Botões</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        
+        .btn-exibir { background-color: #28a745; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; }
+        .btn-apagar { background-color: #dc3545; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; margin-left: 10px; }
+        
+        #mensagem { 
+            margin-top: 20px; 
+            font-size: 1.2rem; 
+            color: #333; 
+            height: 30px; /* Mantém o espaço reservado mesmo vazio */
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btnExibir" class="btn-exibir">Escrever Mensagem</button>
+    <button id="btnApagar" class="btn-apagar">Apagar Mensagem</button>
+    
+    <p id="mensagem"></p>
+
+    <script>
+        // Selecionando os elementos
+        const botaoExibir = document.getElementById('btnExibir');
+        const botaoApagar = document.getElementById('btnApagar');
+        const campoTexto = document.getElementById('mensagem');
+
+        // Lógica para escrever
+        botaoExibir.addEventListener('click', () => {
+            campoTexto.innerText = "🚀 Mensagem ativada com sucesso!";
+        });
+
+        // Lógica para apagar
+        botaoApagar.addEventListener('click', () => {
+            campoTexto.innerText = ""; // Define o texto como vazio
+        });
+    </script>
+
+</body>
+</html>
