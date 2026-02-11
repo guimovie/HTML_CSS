@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Centralizado</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body {
+            background-color: blueviolet;
+        }
+        main {
+            background-color: crimson;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        section {
+            background-color: cyan;
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        h1 {
+            text-align: center;
+            background-color: lightgray;
+        }
+        form {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center        
+        }
+        input[type=submit] {
+            display: block;
+            width: 200px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Tela de login</h1>
+            <form action="">
+                <div>
+                    <label for="iname">Usuario</label>
+                    <input type="email" name="name" id="iname">
+                </div>
+                <div>
+                    <label for="ipass">Senha</label>
+                    <input type="password" name="pass" id="ipass">
+                </div>
+                <div>
+                    <input type="submit">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

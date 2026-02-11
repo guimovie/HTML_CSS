@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body {
+            background-color: lightseagreen;
+        }
+
+        .conteiner0 {
+            background-color: lightcoral;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        .conteiner1 {
+            background-color: lightcoral;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .conteiner1emeio {
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row wrap-reverse;
+        }
+        .conteiner2 {
+            background-color: lightcoral;
+            
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+        }
+        .conteiner3 {
+            background-color: lightcoral;
+            height: 100px;
+            display: flex;
+            flex-flow: column wrap;
+        }
+        .conteiner4 {
+            background-color: lightcoral;
+            height: 100px;
+            display: flex;
+            flex-flow: column-reverse wrap-reverse;
+        }
+
+        .item {
+            background-color: lightgreen;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>row</h2>
+    <p>main-axis <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m440-200 137-240H80v-80h497L440-760l440 280-440 280Z"/></svg> cross-axis <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"/></svg></p>
+    <br>
+    <div class="conteiner0">
+        <div class="item">Exemplo de texto A</div>
+        <div class="item">Exemplo de texto B</div>
+        <div class="item">Exemplo de texto C</div>
+        <div class="item">Exemplo de texto D</div>
+        <div class="item">Exemplo de texto E</div>
+        <div class="item">Exemplo de texto F</div>
+        <div class="item">Exemplo de texto G</div>
+    </div>
+    <br>
+    <div class="conteiner1">
+        <div class="item">Exemplo de texto A</div>
+        <div class="item">Exemplo de texto B</div>
+        <div class="item">Exemplo de texto C</div>
+        <div class="item">Exemplo de texto D</div>
+        <div class="item">Exemplo de texto E</div>
+        <div class="item">Exemplo de texto F</div>
+        <div class="item">Exemplo de texto G</div>
+    </div>
+    <br>
+    <div class="conteiner1emeio">
+        <div class="item">Exemplo de texto A</div>
+        <div class="item">Exemplo de texto B</div>
+        <div class="item">Exemplo de texto C</div>
+        <div class="item">Exemplo de texto D</div>
+        <div class="item">Exemplo de texto E</div>
+        <div class="item">Exemplo de texto F</div>
+        <div class="item">Exemplo de texto G</div>
+    </div>
+    <br>
+    <h2>row-reverse</h2>
+    <p>main-axis <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M520-200 80-480l440-280-137 240h497v80H383l137 240Z"/></svg> cross-axis <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"/></svg></p>
+    <br>
+    <div class="conteiner2">
+        <div class="item">Exemplo de texto A</div>
+        <div class="item">Exemplo de texto B</div>
+        <div class="item">Exemplo de texto C</div>
+        <div class="item">Exemplo de texto D</div>
+        <div class="item">Exemplo de texto E</div>
+        <div class="item">Exemplo de texto F</div>
+        <div class="item">Exemplo de texto G</div>
+    </div>
+    <br>
+    <h2>column</h2>
+    <p>main-axis <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"/></svg> cross-axis <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m440-200 137-240H80v-80h497L440-760l440 280-440 280Z"/></svg></p>
+    <br>
+    <div class="conteiner3">
+        <div class="item">Exemplo de texto A</div>
+        <div class="item">Exemplo de texto B</div>
+        <div class="item">Exemplo de texto C</div>
+        <div class="item">Exemplo de texto D</div>
+        <div class="item">Exemplo de texto E</div>
+        <div class="item">Exemplo de texto F</div>
+        <div class="item">Exemplo de texto G</div>
+    </div>
+    <br>
+    <h2>column-reverse</h2>
+    <p>main-axis <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg> cross-axis <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m440-200 137-240H80v-80h497L440-760l440 280-440 280Z"/></svg></p>
+    <br>
+    <div class="conteiner4">
+        <div class="item">Exemplo de texto A</div>
+        <div class="item">Exemplo de texto B</div>
+        <div class="item">Exemplo de texto C</div>
+        <div class="item">Exemplo de texto D</div>
+        <div class="item">Exemplo de texto E</div>
+        <div class="item">Exemplo de texto F</div>
+        <div class="item">Exemplo de texto G</div>
+    </div>
+    <br>
+</body>
+</html>
