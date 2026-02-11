@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .conteiner {
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+        }
+        .item1 {
+            background-color: lightgreen;
+            border: 1px solid black;
+            padding: 10px;
+            flex-basis: 70px;
+        }
+        .item2 {
+            background-color: lightgreen;
+            border: 1px solid black;
+            padding: 10px;
+            flex-basis: 100px;
+        }
+        
+        #item1 {
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+        #item2 {
+            flex-shrink: 4;
+            flex-grow: 2;
+        }
+        #item3 {
+            flex-shrink: 1;
+            flex-grow: 5;
+        }
+        #item4 {
+            flex-shrink: 8;
+            flex-grow: 8;
+        }
+        #item5 {
+            flex-shrink: 5;
+            flex-grow: 1;
+        }
+        #item6 {
+            flex-shrink: 0;
+            flex-grow: 7;
+        }
+        #item7 {
+            flex-shrink: 5;
+            flex-grow: 0;
+        }
+        #item11 {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        #item22 {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        #item33 {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        #item44 {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        #item55 {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        #item66 {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        #item77 {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="div1" class="conteiner">
+        <div class="item1" id="item1">A</div>
+        <div class="item1" id="item2">B</div>
+        <div class="item1" id="item3">C</div>
+        <div class="item1" id="item4">D</div>
+        <div class="item1" id="item5">E</div>
+        <div class="item1" id="item6">F</div>
+        <div class="item1" id="item7">G</div>
+    </div>
+    <br>
+    <div id="div2" class="conteiner">
+        <div class="item2" id="item11">A</div>
+        <div class="item2" id="item22">B</div>
+        <div class="item2" id="item33">C</div>
+        <div class="item2" id="item44">D</div>
+        <div class="item2" id="item55">E</div>
+        <div class="item2" id="item66">F</div>
+        <div class="item2" id="item77">G</div>
+    </div>
+    <br>
+</body>
+</html>
