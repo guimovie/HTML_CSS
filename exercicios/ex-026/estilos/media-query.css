@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 576px) {
+
+    header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    
+    header > h1 {
+        text-align: left;
+        flex: 0 0 200px;
+    }
+
+    header > nav {
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+
+    header > nav > a {
+        margin: 5px;
+        margin-bottom: 0px;
+        flex: none;
+    
+    }
+}
+
