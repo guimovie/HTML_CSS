@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: aqua;
+            border: 1px solid;
+            display: grid;
+            grid-template: repeat(3, 100px) / repeat(4, 1fr);
+            gap: 2px;
+        }
+
+        .caixa {
+            background-color: blueviolet;
+            color: white;
+            font-size: 3em;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #caixa1 {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        #caixa2 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        #caixa3 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="caixa" id="caixa1">1</div>
+        <div class="caixa" id="caixa2">2</div>
+        <div class="caixa" id="caixa3">3</div>
+    </div>
+</body>
+</html>
