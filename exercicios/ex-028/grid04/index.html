@@ -12,6 +12,20 @@
             grid-template: repeat(3, 100px) / repeat(4, 1fr);
             gap: 5px;
         }
+        .container2 {
+            background-color: aqua;
+            border: 1px solid;
+            display: grid;
+            grid-template: repeat(3, 100px) / repeat(3, 1fr);
+            gap: 5px;
+        }
+        .container3 {
+            background-color: aqua;
+            border: 1px solid;
+            display: grid;
+            grid-template: repeat(3, 100px) / repeat(3, 1fr);
+            gap: 5px;
+        }
 
         .caixa {
             background-color: blueviolet;
@@ -22,7 +36,6 @@
             align-items: center;
             justify-content: center;
         }
-
         #caixa1 {
             grid-row-start: 1;
             grid-row-end: 2;
@@ -41,6 +54,41 @@
             grid-column-start: 3;
             grid-column-end: -1;
         }
+        #caixa4 {
+            grid-row: 1 / 2;
+            grid-column: 1 / span 2;
+        }
+        #caixa5 {
+            grid-row: 1 / span 2;
+            grid-column: -2 / -1;
+        }
+        #caixa6 {
+            grid-row: 2 / span 2;
+            grid-column: 1 / 2;
+        }
+        #caixa7 {
+            grid-row: 2 / 3;
+            grid-column: 2 / 3;
+        }
+        #caixa8 {
+            grid-row: -2 / -1;
+            grid-column: 2 / span 2;
+        }
+        #box1 {
+            grid-area: 1 / 1 / -2 / 2;
+        }
+        #box2 {
+            grid-area: 1 / 2 / 2 / -1;
+        }
+        #box3 {
+            grid-area: 2 / 2 / -2 / -2;
+        }
+        #box4 {
+            grid-area: 2 / -2 / -1 / -1;
+        }
+        #box5 {
+            grid-area: -2 / 1 / -1 / -2;
+        }
     </style>
 </head>
 <body>
@@ -48,6 +96,22 @@
         <div class="caixa" id="caixa1">1</div>
         <div class="caixa" id="caixa2">2</div>
         <div class="caixa" id="caixa3">3</div>
+    </div>
+<br>
+    <div class="container2">
+        <div class="caixa" id="caixa4">1</div>
+        <div class="caixa" id="caixa5">2</div>
+        <div class="caixa" id="caixa6">3</div>
+        <div class="caixa" id="caixa7">4</div>
+        <div class="caixa" id="caixa8">5</div>
+    </div>
+    <br>
+    <div class="container3">
+        <div class="caixa" id="box1">1</div>
+        <div class="caixa" id="box2">2</div>
+        <div class="caixa" id="box3">3</div>
+        <div class="caixa" id="box4">4</div>
+        <div class="caixa" id="box5">5</div>
     </div>
 </body>
 </html>
