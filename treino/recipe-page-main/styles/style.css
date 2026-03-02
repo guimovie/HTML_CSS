@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    
+    --fundo: hsl(30, 54%, 90%);
+    --fundo-conteudo: hsl(0, 0%, 100%);
+    --cor-1: hsl(30, 10%, 34%);
+    --cor-2: hsl(24, 5%, 18%);
+    --cor-3: hsl(14, 45%, 36%);
+    --cor-4: hsl(332, 51%, 32%);
+    --cor-5: hsl(330, 100%, 98%);
+    --font-1: "young serif", times, serif;
+    --font-2: "outfit", sans-serif;
+}
+
+body {
+    font-family: var(--font-2);
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--fundo);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+main {
+    background-color: var(--fundo-conteudo);
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+ul
