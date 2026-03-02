@@ -26,18 +26,107 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: var(--fundo);
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
 }
 
 main {
     background-color: var(--fundo-conteudo);
+    overflow: hidden;
+    transition: margin 0.3s;
+}
+
+#recipe {
+    padding: 20px 0px;
+    width:85%;
+    margin: auto;
+}
+
+.image {
+    transition: margin 0.3s;
 }
 
 img {
     width: 100%;
-    object-fit: contain;
 }
 
-ul
+h1, h2, h3{
+    font-family: var(--font-1);
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+p, li {
+    line-height: 25px;
+    color: var(--cor-1);
+}
+
+h1 {
+    line-height: 40px;
+    color: var(--cor-2);
+}
+
+article {
+    margin-bottom: 40px;
+}
+
+ul  {
+    list-style-position: inside;
+}
+
+li {
+    margin: 10px 25px;
+}
+
+#title p {
+    margin: 20px 0px;
+}
+
+#preparation {
+    padding-left: 20px;
+    margin: 40px 0px;
+}
+
+#preparation h3  {
+    color: var(--cor-4);
+}
+
+
+h2 {
+    color: var(--cor-3);
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    margin: 20px 0px;
+}
+
+.table p {
+    border-bottom: 1px solid var(--cor-1);
+    margin: 10px 0px;
+}
+
+@media screen and (min-width:576px) {
+    main {
+        width: 560px;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+    }
+    
+}
+
+@media screen and  (min-width: 768px) {
+    main {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        display: grid;
+    }
+
+    .image {
+        place-self: center center;
+        margin: 30px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
