@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-1: rgb(218, 207, 252);
+    --cor-2: rgb(118, 80, 220);
+
+    --cor-3: rgb(249, 238, 225);
+    --cor-4: rgb(255, 203, 107);
+
+    --white: rgb(255, 255, 255);
+    --black: rgb(18, 18, 18);
+}
+
+body {
+    background-color: var(--white);
+}
+
+#box-1 {
+    background-color: var(--cor-2);
+}
+
+#box-2 {
+    background-color: var(--cor-3);
+}
+
+#box-3 {
+    background-color: var(--cor-4);
+}
+
+#box-4 {
+    background-color: var(--cor-1);
+}
+
+#box-5 {
+    background-color: var(--cor-2);
+}
+
+#box-6 {
+    background-color: var(--cor-2);
+}
+
+#box-7 {
+    background-color: var(--cor-3);
+}
+
+#box-8 {
+    background-color: var(--cor-4);
+}
+ 
